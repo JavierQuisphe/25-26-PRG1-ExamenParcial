@@ -88,7 +88,14 @@ if (persianaAbierta) {
 }
 ```
 
-¿Qué observas en este código?
+### ¿Qué observas en este código?
+El código está usado probabilidades para simular si una persiana está abierta y si la luz está encendida, también está usando un ternario para que se simplifique la impresión del resultado
+
+### Explicación del error
+No hay error, está correctamente implementado y es un uso correco de las condicionales y del ternario.
+
+### Propuesta de mejora
+Al no haber un error no se hará una propuesta de mejora 
 
 ---
 
