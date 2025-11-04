@@ -63,8 +63,14 @@ System.out.println("Ventana cerrada\tLuz apagada\tLuz encendida");
 System.out.println("[ ]\t[º]\t[*]");
 ```
 
-¿Qué observas en este código?
-En este código se observa que imprime el diseño de una ventana abierta, una ventana con la luz apagada y una luz encendida
+### ¿Qué observas en este código?
+En este código se observa que imprime una ventana abierta, una ventana con la luz apagada y una luz encendida, a su vez el simbolo que representa a cada una de ellas
+
+### Explicación del error 
+No se encontraron errores en el código
+
+### Propuesta de mejora
+Al no encontrarse errores no se propondrá ninguna mejora
 
 ---
 
