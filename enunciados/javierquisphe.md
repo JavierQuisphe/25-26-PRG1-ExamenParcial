@@ -140,7 +140,17 @@ System.out.println();
 System.out.println();
 ```
 
-¿Qué observas en este código?
+### ¿Qué observas en este código?
+En este código se están imprimiendo varias lineas vacias despues de a linea divisora
+
+### Explicación del error
+Es un error reduntante, dos println() seguidos generan demasiado espacio en la consola, lo que puede llegar a afectar la claridad de la salida
+
+### Propuesta de correción
+Dejar unicamente solo un salto de línea o incluirlo dentro de la misma impresión:
+```java
+System.out.println("==================================\n")
+```
 
 ---
 
