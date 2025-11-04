@@ -113,7 +113,20 @@ if (habitacion != HABITACIONES_POR_PLANTA) {
 }
 ```
 
-¿Qué observas en este código?
+### ¿Qué observas en este código?
+En esté código se observa que se está dejando un espacio que representa el ascensor y luego se añaden "(::)" que funcionan como separadores entre habitaciones
+
+### Explicación del error
+El error está en la segunda condición que se compara la variable habitación con HABITACIONES_POR_PLANTA, pero por lo general el indice de la habitacion empieza en 0 o 1, por lo que la comparacion deberia hacerse con base en la ultima habitacion y no con la cantidad total
+
+### Propuesta de correcion
+Dependiendo de en que valor empiecen los indices (si en 0 o en 1) podríamos ponerlo de la siguiente manera
+
+```java
+if (habitacion < HABITACIONES_POR_PLANTA) {
+    System.out.print("::");
+}
+```
 
 ---
 
