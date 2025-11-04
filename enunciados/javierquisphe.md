@@ -33,8 +33,25 @@ for (int dia = 1; dia <= TOTAL_DIAS; dia++) {
 }
 ```
 
-¿Qué observas en este código?
+### ¿Qué observas en este código?
+El código usa dos bucles anidados para recorrer los días y las horas
 
+### Explicación de error
+El println dentro del segundo bucle hace que cada hora se imprima en una lìnea diferente, no es un error de lógica, pero si puede considerarse un detalle de formato
+
+### Propuesta de correción
+En lugar de utilizar System.out.println podría utilizarse System.out.print para imprimir las horas en la misma lìnea y añadir un salto de lìnea solo cuando cambia el día
+
+```java
+for (int dia = 1; dia <= TOTAL_DIAS; dia++) {
+    System.out.println("\n=== Día " + dia + " ===");
+    for (int hora = 0; hora < HORAS_POR_DIA; hora++) {
+        System.out.println(hora + ":00h");
+        // ...
+    }
+    System.out.println();
+}
+```
 ---
 
 ## Pregunta 2
@@ -47,6 +64,7 @@ System.out.println("[ ]\t[º]\t[*]");
 ```
 
 ¿Qué observas en este código?
+En este código se observa que imprime el diseño de una ventana abierta, una ventana con la luz apagada y una luz encendida
 
 ---
 
